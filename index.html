@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Illuminator</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body class="theme--automne font-yusei">
+
+<header class="topbar">
+
+<div class="logo">Illuminator</div>
+
+<nav class="nav">
+
+<button data-mode="day">Jour</button>
+<button data-mode="week">Semaine</button>
+<button data-mode="month">Mois</button>
+<button data-mode="projects">Projets</button>
+
+</nav>
+
+<div class="controls">
+
+<select id="fontSelect">
+<option value="font-yusei">Yusei Magic</option>
+<option value="font-inter">Inter</option>
+</select>
+
+<select id="fontSize">
+<option value="16">Normal</option>
+<option value="18">Grand</option>
+<option value="20">Très grand</option>
+</select>
+
+<select id="season">
+<option value="automne">Automne</option>
+<option value="printemps">Printemps</option>
+<option value="ete">Été</option>
+<option value="hiver">Hiver</option>
+</select>
+
+<button id="toggleDark">Sombre</button>
+<button id="focusMode">Focus</button>
+
+</div>
+
+</header>
+
+
+<div class="layout">
+
+<aside class="panel-left">
+
+<h3>Projets</h3>
+
+<div id="projectList"></div>
+
+<button id="newProject">+ projet</button>
+
+</aside>
+
+
+<main class="center">
+
+<div id="timeline"></div>
+
+<div id="dashboard"></div>
+
+</main>
+
+
+<aside class="panel-right">
+
+<h3>Agenda</h3>
+
+<div id="calendar"></div>
+
+<h3>Suggestion</h3>
+
+<div id="recommendation"></div>
+
+</aside>
+
+</div>
+
+
+<div id="modalRoot"></div>
+
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
